@@ -1,2 +1,2 @@
-# Monochrome-Dots-WIN
-My black and white rice on my thinkpad.
+# monochrome thinkpad rice
+My black and white rice setup on my ThinkPad.
