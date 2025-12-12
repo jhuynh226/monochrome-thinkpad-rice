@@ -1,0 +1,536 @@
+/* 
+This is default and very simple styles file for Yasb. 
+For more information about configuration options, please visit the Wiki https://github.com/amnweb/yasb/wiki
+*/
+
+:root {
+    --mauve: #cba6f7;
+    --red: #f38ba8;
+    --yellow: #f9e2af;
+    --blue: #81A1C1;
+    --lavender: #B48EAD;
+    --text: #d8dee9;
+    --subtext1: #bac2de;
+    --subtext0: #a6adc8;
+    --overlay2: #9399b2;
+    --overlay1: #7f849c;
+    --overlay0: #6c7086;
+    --surface2: #585b70;
+    --surface1: #434c5e;
+    --surface0: #3B4252;
+    --base: #1e1e2e;
+    --crust: #2E3440;
+}
+
+/* Global styles for ToolTip */
+QToolTip {
+    padding: 6px;
+    color: white;
+    font-size: 12px;
+    background-color: rgba(0, 0, 0, 0.8);
+    border: 0px solid #313244;
+    border-radius: 6px;
+}
+
+* {
+    font-size: 11px;
+    color: rgb(230, 230, 230);
+    font-weight: 400;
+    font-family: "0xProto Nerd Font Mono";
+    margin: 0;
+    padding: 0;
+}
+
+.yasb-bar {
+    padding: 0px 6px;
+    margin: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    border: 1px solid rgba(100, 100, 100, 0.5);
+    border-radius: 4px
+}
+
+.widget {
+    padding: 0 3px;
+    margin: 0;
+}
+
+.icon {
+    font-size: 16px;
+}
+
+.widget .label {
+    padding: 0px 2px;
+}
+
+.komorebi-active-layout {
+    padding-left: 0px;
+}
+
+.komorebi-active-layout .label {
+    font-weight: 500;
+    padding-top: 5px;
+}
+
+.apps-widget .widget-container,
+.komorebi-workspaces .widget-container,
+.komorebi-active-layout .widget-container {
+    /* border: 1px solid rgba(100, 100, 100, 0.5); */
+}
+
+.komorebi-workspaces .widget-container {
+    /* margin-left: -4px; */
+}
+
+.komorebi-active-layout .widget-container {
+    border-radius: 6px;
+}
+
+.komorebi-workspaces {
+    /* border: 1px solid rgba(80, 80, 80, 0.5); */
+}
+
+.komorebi-workspaces .offline-status {
+    color: white;
+    font-weight: 600;
+}
+
+.komorebi-workspaces .ws-btn {
+    border: none;
+    background-color: transparent;
+    margin: 0;
+    font-size: 12px;
+    color: white;
+    height: 28;
+    width: 16px;
+}
+
+.komorebi-workspaces .ws-btn:hover {
+    color: var(--subtext1);
+}
+
+.komorebi-workspaces .ws-btn.populated {
+    color: transparent;
+    width: 8px;
+    height: 8px;
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 4px;
+    margin: 0 4px;
+    font-size: 1px;
+}
+
+.komorebi-workspaces .ws-btn.active {
+    color: transparent;
+    background-color: rgba(255, 255, 255, 0.6);
+    width: 38px;
+    max-width: 38px;
+    height: 12px;
+    margin: 0 4px;
+    border-radius: 6px;
+}
+
+.power-menu-widget .label {
+    color: #f38ba8;
+    font-size: 15px;
+}
+
+.power-menu-popup {
+    background-color: transparent
+}
+
+.power-menu-popup .button {
+    padding: 0;
+    width: 180px;
+    height: 230px;
+    border-radius: 8px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: var(--text);
+    border-left: 4px solid rgba(58, 59, 83, 0);
+    border-right: 4px solid rgba(58, 59, 83, 0);
+    border-top: 4px solid rgba(58, 59, 83, 0);
+    border-bottom: 4px solid rgba(58, 59, 83, 0);
+    margin: 0px;
+}
+
+.power-menu-popup .button.hover {
+    background-color: rgba(100, 100, 100, 0.5);
+    border-left: 4px solid var(--base);
+    border-right: 4px solid var(--base);
+    border-top: 4px solid var(--base);
+    border-bottom: 4px solid var(--base);
+}
+
+.power-menu-popup .button .label {
+    margin-bottom: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--overlay2)
+}
+
+.power-menu-popup .button .icon {
+    font-size: 64px;
+    padding-top: 32px;
+    color: var(--surface2)
+}
+
+.power-menu-popup .button.cancel .icon {
+    padding: 0;
+    margin: 0;
+}
+
+.power-menu-popup .button.cancel .label {
+    color: var(--red);
+    margin: 0;
+}
+
+.power-menu-popup .button.cancel {
+    height: 32px;
+    border-radius: 4px;
+}
+
+.uptime {
+    font-size: 14px;
+    margin-bottom: 10px;
+    color: var(--surface2);
+    font-weight: 600;
+}
+
+.microphone-widget {
+    padding: 0 6px 0 6px;
+}
+
+.microphone-widget .icon {
+    font-size: 18px;
+}
+
+.microphone-widget .icon {
+    color: var(--mauve);
+}
+
+/* WEATHER WIDGET */
+.weather-widget {
+    padding: 0 3px !important;
+    font-family: "0xProto Nerd Font Mono" !important;
+}
+
+.weather-widget .widget-container {
+    display: flex !important;
+    align-items: center !important;
+    line-height: 1 !important;
+}
+
+.weather-widget .label {
+    display: flex !important;
+    align-items: center !important;
+}
+
+.weather-widget .icon {
+    font-size: 16px !important;
+    margin: 0 2px 1px 0 !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    vertical-align: middle !important;
+    line-height: 1 !important;
+}
+
+.weather-widget .icon.sunnyDay {
+    color: rgb(221, 210, 107) !important;
+}
+
+.weather-widget .icon.clearNight {
+    color: rgb(107, 189, 221) !important;
+    font-size: 22px !important;
+    margin: 1px 2px 0px 0 !important;
+}
+
+.media-widget .btn {
+    font-size: 12px;
+    color: white;
+}
+
+/* home lol */
+.home-widget .label {
+    color: white;
+    font-weight: 500;
+    font-family: "0xProto Nerd Font Mono";
+}
+
+.home-widget .icon {
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.home-menu {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.home-menu .menu-item {
+    padding: 6px 48px 7px 16px;
+    font-size: 12px;
+    font-family: '0xProto Nerd Font Mono', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    font-weight: 400;
+}
+
+.home-menu .menu-item:hover {
+    background-color: rgba(128, 130, 158, 0.15);
+    color: white;
+}
+
+.home-menu .separator {
+    max-height: 1px;
+    background-color: rgba(128, 130, 158, 0.3);
+}
+
+.notification-widget {
+    padding: 0 0px 0 4px;
+}
+
+.notification-widget .icon {
+    font-size: 14px;
+}
+
+.notification-widget .icon.new-notification {
+    color: var(--blue);
+}
+
+.battery-widget.status-charging .icon {
+    color: #74c7ec;
+}
+
+.battery-widget.status-full .icon {
+    color: #94e2d5;
+}
+
+.battery-widget.status-high .icon {
+    color: #a6e3a1;
+}
+
+.battery-widget.status-medium .icon {
+    color: #f9e2af;
+}
+
+.battery-widget.status-low .icon {
+    color: #fab387;
+}
+
+.battery-widget.status-critical .icon {
+    color: #f38ba8;
+}
+
+/* ICONS */
+.icon {
+    font-size: 16px;
+}
+
+.volume-widget .icon {
+    color: #f1c40f;
+    font-size: 14px;
+    padding-top: 2px;
+}
+
+
+.battery-widget.status-charging .icon,
+.battery-widget.status-critical .icon,
+.battery-widget.status-full .icon,
+.battery-widget.status-high .icon,
+.battery-widget.status-low .icon,
+.battery-widget.status-medium .icon {
+    font-size: 18px;
+    color: white;
+    padding: 0;
+    margin: 0 0px 0px 0;
+}
+
+.memory-widget .icon {
+    color: #3b6ea5;
+}
+
+.cpu-widget .icon {
+    color: #F05C00;
+}
+
+.gpu-widget {
+    color: #76b900;
+}
+
+.gpu-widget .icon {
+    color: #76b900;
+}
+
+.wifi-widget .widget-container .wifi-icon {
+    color: #1abc9c;
+    font-size: 14px;
+}
+
+.wifi-menu {
+    font-family: 'Segoe UI';
+    background-color: rgba(0, 0, 0, 0.5);
+    max-height: 350px;
+    min-height: 375px;
+    min-width: 375px;
+}
+
+.wifi-menu .progress-bar {
+    max-height: 2px;
+}
+
+.wifi-menu .progress-bar::chunk {
+    background-color: #FFFFFF;
+}
+
+.wifi-menu .header {
+    font-family: 'Segoe UI';
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 2px;
+    padding: 12px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.wifi-menu .error-message {
+    font-family: 'Segoe UI';
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 2px;
+    padding: 12px;
+    background-color: red;
+    color: white;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.wifi-menu .wifi-list {
+    background-color: rgba(0, 0, 0, 0.5);
+    margin-right: 3px;
+}
+
+.wifi-menu .wifi-item {
+    min-height: 35px;
+    padding: 2px 12px;
+    margin: 2px 4px;
+}
+
+.wifi-menu .wifi-item:hover {
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 6px;
+}
+
+.wifi-menu .wifi-item[active=true] {
+    background-color: rgba(255, 255, 255, 0.15);
+    font-size: 14px;
+    border-radius: 6px;
+    min-height: 80px;
+}
+
+.wifi-menu .wifi-item .icon {
+    font-family: 'Segoe Fluent Icons';
+    font-size: 26px;
+    margin-right: 10px;
+}
+
+.wifi-menu .wifi-item .name {
+    font-family: 'Segoe UI';
+    font-size: 14px;
+    margin-right: 10px;
+}
+
+.wifi-menu .wifi-item .password {
+    font-family: 'Segoe UI';
+    background-color: transparent;
+    font-size: 14px;
+}
+
+.wifi-menu .wifi-item .status {
+    font-family: 'Segoe UI';
+    font-size: 14px;
+}
+
+.wifi-menu .wifi-item .strength {
+    font-family: 'Segoe UI';
+    font-size: 14px;
+}
+
+.wifi-menu .wifi-item .controls-container {
+    padding-top: 8px;
+}
+
+.wifi-menu .wifi-item .connect {
+    background-color: rgba(255, 255, 255, 0.15);
+    padding: 4px 30px;
+    border-radius: 4px;
+    border: none;
+    font-size: 14px;
+}
+
+.wifi-menu .wifi-item .connect:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.wifi-menu .wifi-item .connect:pressed {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.wifi-menu .footer {
+    font-size: 12px;
+    font-weight: 600;
+    padding: 12px;
+    margin-top: 2px;
+    color: #9399b2;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.wifi-menu .footer .settings-button {
+    font-family: 'Segoe UI';
+    background-color: transparent;
+    border: none;
+    padding: 0 2px;
+    min-width: 26px;
+    min-height: 26px;
+    color: #fff;
+}
+
+.wifi-menu .footer .refresh-icon {
+    font-family: 'Segoe Fluent Icons';
+    background-color: transparent;
+    border: none;
+    min-width: 26px;
+    min-height: 26px;
+    color: #fff;
+}
+
+.wifi-menu .footer .refresh-icon:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 4px;
+}
+
+.volume-slider {
+    border: none;
+}
+
+.volume-slider::groove {}
+
+.volume-slider::handle {}
+
+.audio-menu {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.audio-container .device {
+    background-color: transparent;
+    border: none;
+    padding: 6px 8px 6px 4px;
+    margin: 2px 0;
+    font-size: 12px;
+    border-radius: 4px;
+}
+
+.audio-container .device.selected {
+    background-color: rgba(255, 255, 255, 0.085);
+}
+
+.audio-container .device:hover {
+    background-color: rgba(255, 255, 255, 0.06);
+}
